@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite" parallel="tests">
+	<listeners>
+		<listener class-name="automation.suite.Listeners.TestListener" />
+	</listeners>
+	<test name="Automation Test for API Calls">
+		<classes>
+			<class name="automation.suite.test.API_Tests" />
+		</classes>
+	</test>
+	<test name="Automation Test for UI Scripts">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="automation.suite.test.UI_Tests" />
+		</classes>
+	</test> 		
+</suite>

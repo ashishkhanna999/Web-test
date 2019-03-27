@@ -1,0 +1,22 @@
+{
+  "description": "Schema Validation for Get employee end point.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "employee_name": {
+      "type": "string"
+    },
+    "employee_salary": {
+      "type": "string"
+    },
+    "employee_age": {
+      "type": "string"
+    },
+    "profile_image": {
+      "type": "string"
+    }
+  }
+}

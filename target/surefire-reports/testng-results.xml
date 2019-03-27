@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AutomationSuite" duration-ms="42176" started-at="2019-03-26T23:46:54Z" finished-at="2019-03-26T23:47:36Z">
+    <groups>
+    </groups>
+    <test name="Automation Test for API Calls" duration-ms="3920" started-at="2019-03-26T23:46:54Z" finished-at="2019-03-26T23:46:58Z">
+      <class name="automation.suite.test.API_Tests">
+        <test-method status="PASS" signature="setupTest(java.lang.String)[pri:0, instance:automation.suite.test.API_Tests@2acf57e3]" name="setupTest" is-config="true" duration-ms="9" started-at="2019-03-26T23:46:54Z" finished-at="2019-03-26T23:46:54Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="api_creatandVerifyNewEmployee()[pri:0, instance:automation.suite.test.API_Tests@2acf57e3]" name="api_creatandVerifyNewEmployee" duration-ms="1204" started-at="2019-03-26T23:46:54Z" description="Verify that using create enpoint user is able to add new employee and verify it." finished-at="2019-03-26T23:46:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- api_creatandVerifyNewEmployee -->
+        <test-method status="PASS" signature="api_verifyJsonSchema()[pri:0, instance:automation.suite.test.API_Tests@2acf57e3]" name="api_verifyJsonSchema" duration-ms="762" started-at="2019-03-26T23:46:56Z" description="Verify that user is able to verify the Json schema for Endpoint employees" finished-at="2019-03-26T23:46:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- api_verifyJsonSchema -->
+        <test-method status="PASS" signature="api_verifyNewlyAddedEmployee()[pri:0, instance:automation.suite.test.API_Tests@2acf57e3]" name="api_verifyNewlyAddedEmployee" duration-ms="517" started-at="2019-03-26T23:46:56Z" description="Verify the response of newly created employee." depends-on-methods="automation.suite.test.API_Tests.api_creatandVerifyNewEmployee" finished-at="2019-03-26T23:46:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- api_verifyNewlyAddedEmployee -->
+        <test-method status="PASS" signature="api_updateNewlyAddedEmployee()[pri:0, instance:automation.suite.test.API_Tests@2acf57e3]" name="api_updateNewlyAddedEmployee" duration-ms="435" started-at="2019-03-26T23:46:57Z" description="Verify that user is able to call update endpoint successfully" depends-on-methods="automation.suite.test.API_Tests.api_verifyNewlyAddedEmployee" finished-at="2019-03-26T23:46:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- api_updateNewlyAddedEmployee -->
+        <test-method status="PASS" signature="api_deleteNewlyAddedEmployee()[pri:0, instance:automation.suite.test.API_Tests@2acf57e3]" name="api_deleteNewlyAddedEmployee" duration-ms="539" started-at="2019-03-26T23:46:57Z" description="Verify that user is able to call delete endpoint successfully" depends-on-methods="automation.suite.test.API_Tests.api_updateNewlyAddedEmployee" finished-at="2019-03-26T23:46:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- api_deleteNewlyAddedEmployee -->
+        <test-method status="PASS" signature="TearDown(java.lang.String)[pri:0, instance:automation.suite.test.API_Tests@2acf57e3]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-03-26T23:46:58Z" finished-at="2019-03-26T23:46:58Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- automation.suite.test.API_Tests -->
+    </test> <!-- Automation Test for API Calls -->
+    <test name="Automation Test for UI Scripts" duration-ms="42176" started-at="2019-03-26T23:46:54Z" finished-at="2019-03-26T23:47:36Z">
+      <class name="automation.suite.test.UI_Tests">
+        <test-method status="PASS" signature="setupTest(java.lang.String)[pri:0, instance:automation.suite.test.UI_Tests@783e6358]" name="setupTest" is-config="true" duration-ms="1952" started-at="2019-03-26T23:46:54Z" finished-at="2019-03-26T23:46:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="ui_verifyCreateCustomer()[pri:0, instance:automation.suite.test.UI_Tests@783e6358]" name="ui_verifyCreateCustomer" duration-ms="11472" started-at="2019-03-26T23:46:56Z" description="Verify that the user is able to create an account through the website" finished-at="2019-03-26T23:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ui_verifyCreateCustomer -->
+        <test-method status="PASS" signature="ui_verifyOrderDetails()[pri:0, instance:automation.suite.test.UI_Tests@783e6358]" name="ui_verifyOrderDetails" duration-ms="21592" started-at="2019-03-26T23:47:08Z" description="Verify that the user is able to complete the order from the application." depends-on-methods="automation.suite.test.UI_Tests.ui_verifyCreateCustomer" finished-at="2019-03-26T23:47:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ui_verifyOrderDetails -->
+        <test-method status="PASS" signature="ui_verifyRegisteredCustomer()[pri:0, instance:automation.suite.test.UI_Tests@783e6358]" name="ui_verifyRegisteredCustomer" duration-ms="6827" started-at="2019-03-26T23:47:29Z" description="Verify that the user is able to login into application with registered user." depends-on-methods="automation.suite.test.UI_Tests.ui_verifyCreateCustomer" finished-at="2019-03-26T23:47:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ui_verifyRegisteredCustomer -->
+        <test-method status="PASS" signature="TearDown(java.lang.String)[pri:0, instance:automation.suite.test.UI_Tests@783e6358]" name="TearDown" is-config="true" duration-ms="163" started-at="2019-03-26T23:47:36Z" finished-at="2019-03-26T23:47:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- automation.suite.test.UI_Tests -->
+    </test> <!-- Automation Test for UI Scripts -->
+  </suite> <!-- AutomationSuite -->
+</testng-results>
